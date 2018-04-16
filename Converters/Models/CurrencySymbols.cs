@@ -1,5 +1,4 @@
-﻿using System;
-namespace isbn.Converters.Models
+﻿namespace isbn.Converters.Models
 {
     public enum CurrencySymbols
     {

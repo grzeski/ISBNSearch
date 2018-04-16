@@ -1,5 +1,3 @@
-using System;
-
 namespace isbn.Models
 {
     public class ErrorViewModel
