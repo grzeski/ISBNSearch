@@ -1,0 +1,53 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="HtmlAgilityPack" Version="1.7.4" />
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.5" />
+    <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
+    <PackageReference Include="xunit" Version="2.3.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Clients\" />
+    <Folder Include="Converters\" />
+    <Folder Include="Providers\" />
+    <Folder Include="Converters\Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Models\Scrapper.cs" />
+    <Compile Remove="isbnTests\UnitTest1.cs" />
+    <Compile Remove="isbnTests\obj\Debug\netcoreapp2.0\isbnTests.Program.cs" />
+    <Compile Remove="isbnTests\obj\Debug\netcoreapp2.0\isbnTests.AssemblyInfo.cs" />
+    <Compile Remove="isbnTests\obj\Debug\netcoreapp2.0\isbnTests.AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="isbnTests\bin\Debug\netcoreapp2.0\isbnTests.deps.json" />
+    <None Remove="isbnTests\obj\isbnTests.csproj.nuget.cache" />
+    <None Remove="isbnTests\obj\isbnTests.csproj.nuget.g.props" />
+    <None Remove="isbnTests\obj\isbnTests.csproj.nuget.g.targets" />
+    <None Remove="isbnTests\obj\Debug\netcoreapp2.0\isbnTests.csproj.CoreCompileInputs.cache" />
+    <None Remove="isbnTests\obj\Debug\netcoreapp2.0\isbnTests.AssemblyInfoInputs.cache" />
+    <None Remove="isbnTests\obj\Debug\netcoreapp2.0\isbnTests.dll" />
+    <None Remove="isbnTests\obj\Debug\netcoreapp2.0\isbnTests.pdb" />
+    <None Remove="isbnTests\bin\Debug\netcoreapp2.0\xunit.runner.visualstudio.dotnetcore.testadapter.dll" />
+    <None Remove="isbnTests\bin\Debug\netcoreapp2.0\xunit.runner.utility.netstandard15.dll" />
+    <None Remove="isbnTests\bin\Debug\netcoreapp2.0\xunit.runner.reporters.netstandard15.dll" />
+    <None Remove="isbnTests\bin\Debug\netcoreapp2.0\isbnTests.runtimeconfig.json" />
+    <None Remove="isbnTests\bin\Debug\netcoreapp2.0\isbnTests.runtimeconfig.dev.json" />
+    <None Remove="isbnTests\obj\Debug\netcoreapp2.0\isbnTests.csproj.FileListAbsolute.txt" />
+    <None Remove="isbnTests\bin\Debug\netcoreapp2.0\isbnTests.deps.json" />
+    <None Remove="isbnTests\bin\Debug\netcoreapp2.0\isbnTests.dll" />
+    <None Remove="isbnTests\obj\Debug\netcoreapp2.0\isbnTests.csprojResolveAssemblyReference.cache" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Remove="isbnTests\obj\project.assets.json" />
+  </ItemGroup>
+</Project>

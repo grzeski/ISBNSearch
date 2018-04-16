@@ -1,0 +1,28 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@{  
+   isbn.Models.Product product =  
+   (isbn.Models.Product)ViewData["product"];  
+}
+<div class="row">
+    <div>
+        @if ((bool)@ViewData["result"])
+        {   
+            <h2>Results</h2>
+            <p>Your book lowest price is:</p>
+            <p><b>@product.ConvertedPrice PLN</b></p>
+            <p>You can but it <a href="@product.ProductPage">here</a></p>
+        }
+        else
+        {
+            <p>@ViewData["message"]</p>
+            <h2>Please provide a more or less exact book title for search</h2>
+            <form method="post">
+                <label for="title">Book title</label>
+                <input type="text" name="title"/>
+                <input type="submit" value="Submit">
+            </form>
+        }
+    </div>
+</div>
